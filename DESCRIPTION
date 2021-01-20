@@ -1,0 +1,18 @@
+Type: Compendium
+Package: precisionFDA_covid19_seqEDA
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "Mahmoud",
+           family = "Shobair",
+           role = c("aut", "cre"),
+           email = "email@mahmoudshobair.com")
+Description: Computational analysis workflow for finding
+    clinical associations from immunological high-throughput genetic
+    sequencing data
+License: What license it uses
+Depends: 
+    data.table,
+    renv
+Encoding: UTF-8
+LazyData: true
