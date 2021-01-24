@@ -6,6 +6,13 @@ name = "pypi"
 [packages]
 jupyter = "*"
 notebook = "*"
+sqlalchemy = "*"
+ipython-sql = "*"
+ipykernel = "*"
+pandas = "*"
+jupyterlab = "*"
+jupyterlab-drawio = "*"
+rpy2 = "*"
 
 [dev-packages]
 
