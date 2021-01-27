@@ -10,9 +10,11 @@ sqlalchemy = "*"
 ipython-sql = "*"
 ipykernel = "*"
 pandas = "*"
-jupyterlab = "*"
-jupyterlab-drawio = "*"
+nbimporter = "*"
+ipynb = "*"
+importlib = "*"
 rpy2 = "*"
+ipywidgets = "*"
 
 [dev-packages]
 
