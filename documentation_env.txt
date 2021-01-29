@@ -1,0 +1,33 @@
+﻿Uninstall R
+ R -e '.libPaths()'
+$ sudo rm -r /usr/local/lib/R/site-library/
+sudo rm -r /usr/lib/R/site-library/
+sudo apt-get remove r-base-core
+$ sudo rm -r /usr/local/lib/R/site-library/
+
+Install renv
+install R
+install pip
+sudo apt install python3-pip
+# install pipenv 
+pip3 install pipenv
+# Install renv 
+install.packages("renv")
+renv::init()
+--
+----say yes---
+# install irkernel
+renv::install(‘IRkernel’)
+(uninstallable dep) sudo apt-get install -y r-cran-pbdzmq
+trying with devtools, this is needed first
+
+--- libcurl4-openssl-dev
+libssl-dev
+libxml2-dev
+
+change R installation
+
+sudo vi /etc/apt/sources.list
+sudo apt-get update
+install R 3.6
+

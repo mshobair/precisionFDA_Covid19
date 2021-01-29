@@ -10,7 +10,7 @@ sqlalchemy = "*"
 ipython-sql = "*"
 ipykernel = "*"
 pandas = "*"
-nbimporter = "*"
+#nbimporter = "*"
 ipynb = "*"
 importlib = "*"
 rpy2 = "*"
@@ -19,4 +19,4 @@ ipywidgets = "*"
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = "3.6"
