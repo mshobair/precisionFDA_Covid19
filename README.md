@@ -50,9 +50,9 @@ CREATE INDEX jun_aa_len ON seqtable(junction_aa_length);
 CREATE INDEX meta_ind ON metadata_table(sample_processing_id,subject_id,
 sex, disease_diagnosis, disease_stage, intervention);
 
-*As before - the names in this example are used to reflect the types of data we will be working with
+*As before - the names in this example are used to reflect the types of data we will be working with*
 
-***This script is designed to be easily readable and editable to better customize your staging database's format.
+***This script is designed to be easily readable and editable to better customize your staging database's format.***
 
 ***
 
@@ -70,14 +70,14 @@ After loading the needed libraries the user will add the path to their SQLite DB
 
 Once the SQLite connection instance has been generated the user has the option for generating custom SQL Queries.
 
-***A user well versed in writing SQL queries can create many different types of Queries and Constraints that can generate highly specific datasets to suit their needs..
+***A user well versed in writing SQL queries can create many different types of Queries and Constraints that can generate highly specific datasets to suit their needs.***
 
 Users have the option of exporting the newly cleaned data into either a CSV or another SQLite DB.  Simply comment out the type of file you do NOT want to get and state a path for it to be written to.
 
-***If you so choose, the queries can be piped to the dataoutput of the notebook and used in multiple ways.
+***If you so choose, the queries can be piped to the dataoutput of the notebook and used in multiple ways.***
 
 Once all query parameters are in place you can simply run the entire notebook by using the "Fast Forward" button at the time.  This restarts the python kernel and runs the entire notebook.
 
-***Pleae make certain that you have ample storage and memory resources if the inbound DB is large and the queries complex.
+***Pleae make certain that you have ample storage and memory resources if the inbound DB is large and the queries complex.***
 
 
