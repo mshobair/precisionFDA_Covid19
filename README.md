@@ -32,14 +32,23 @@ Outlined below is the shell script and it's functionality.
 
 run:
 ```sh
-sqlite3 ./test.db << EOF
-cd RandomForest_hypothesis
-pipenv install
-pipenv run python ./rf_hypothesis.py
+
+# creates a SQLite database instance
+sqlite3 ./test.db << EOF # change ./test.db to 
+.mode tabs ;
+.import "./seqtable_test.tsv" seqtable
+.import "./metadata_test.tsv" metadata_table
+
+CREATE INDEX seq_ind ON seqtable(sample_processing_id);
+CREATE INDEX jun_aa_len ON seqtable(junction_aa_length);
+
+CREATE INDEX meta_ind ON metadata_table(sample_processing_id,subject_id,
+sex, disease_diagnosis, disease_stage, intervention);
+
+EOF
+
 ```
 ***
-
-sqlite3 ./test.db << EOF # creates a SQLite database instance
 
 *This can be edited to place the database wherever you have the storage.*
 
@@ -73,6 +82,8 @@ sex, disease_diagnosis, disease_stage, intervention);
 For our methodology around Transforming, filtering, and converting the data we used a Jupyter Notebook.  This Notebook is meant to be run in full after entering the parameters.  An easy way to do this is by clicking the "Fast Forward" button at the top of the page.
 
 **Data Filtering and Conversion Notebook**
+
+*** Update the SQLite database path to the
 
 The primary function of this notebook is to filter and clean the data generated in the "Extract" step.
 
