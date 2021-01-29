@@ -27,6 +27,18 @@ Outlined below is the shell script and it's functionality.
 
 **Generates a new SQLite DB file with the name "test.db" within the directory which the script is run.**
 
+***
+## To run the script:
+
+run:
+```sh
+git clone https://github.com/mshobair/RandomForest_hypothesis.git
+cd RandomForest_hypothesis
+pipenv install
+pipenv run python ./rf_hypothesis.py
+```
+***
+
 sqlite3 ./test.db << EOF
 
 *This can be edited to place the database wherever you have the storage.*
