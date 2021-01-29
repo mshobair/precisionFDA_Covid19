@@ -32,14 +32,14 @@ Outlined below is the shell script and it's functionality.
 
 run:
 ```sh
-git clone https://github.com/mshobair/RandomForest_hypothesis.git
+sqlite3 ./test.db << EOF
 cd RandomForest_hypothesis
 pipenv install
 pipenv run python ./rf_hypothesis.py
 ```
 ***
 
-sqlite3 ./test.db << EOF
+sqlite3 ./test.db << EOF # creates a SQLite database instance
 
 *This can be edited to place the database wherever you have the storage.*
 
