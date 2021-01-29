@@ -7,11 +7,11 @@ By Dr. Mahmoud Shobair and Gerald Parker
 
 The tool which we have created is designed to handle these functions:
 
-- Takes data from supplied CSV and converts into a SQLite DB
-- Takes the SQLite DB and allows a user to extract, clean, and customize relevant data for which they would like to use into a CSV or SQLite DB.
-- Allows the user to do a test load of the data to validate the integrity of the data which was just exported.
+- Takes data from supplied CSV/TSV flatfiles and converts into a SQLite DB
+- Takes the SQLite DB and allows a user to extract, clean, and customize relevant data for which they would like to use into a flatfile or SQLite DB.
+- Allows the user to load the transformed data to perform exploratory data analysis (EDA). An example use case of data visualization is presented in an R-notebook comparing sequencing data between subjects grouped by disease_stage clinical variable.
 
-> Gerald Finish this phrasing: It is our desire that this tool can help you to generate the specific datasets you need to further analyze data and 
+It is our desire that this tool will help users (developers and scientists) generate specific datasets needed for hypothesis testing.
 
 App development and testing was done primarily in Ubuntu 20.04/18.04 using the Base Desktop install plus and dependancies that will be listed.
 
